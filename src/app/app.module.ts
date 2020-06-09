@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainComponent } from './pages/main/main.component';
 import { NewPostComponent } from './components/new-post/new-post.component';
 import { PersonalComponent } from './components/personal/personal.component';
+import { ButtonComponent } from './components/button/button.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -33,7 +34,8 @@ import { PersonalComponent } from './components/personal/personal.component';
         NavbarComponent,
         MainComponent,
         NewPostComponent,
-        PersonalComponent
+        PersonalComponent,
+        ButtonComponent
     ],
     providers: [],
     schemas: [

@@ -1,23 +1,11 @@
-<GridLayout class="navbar" row="1" columns="auto,*,auto" rows="*" orientation="horizontal">
-    <Button margin="0" col="0" [nsRouterLink]="['/main/home']">
-        <FormattedString>
-            <!-- <Span text="&#xf015;\n" fontFamily="FontAwesome"></Span> -->
-            <Span text="Ho"></Span>
-        </FormattedString>
-    </Button>
-    <Button margin="0" col="1" [nsRouterLink]="['/main/new-post']">
-        <FormattedString>
-            <!-- <Span text="&#xf000;\n" fontFamily="FontAwesome"></Span> -->
-            <Span text="Добавить заявку"></Span>
-        </FormattedString>
-    </Button>
-    <Button margin="0" col="2" [nsRouterLink]="['/main/personal']">
-        <FormattedString>
-            <Span text="&#xf007;" class="fontAwesomeIcons"></Span>
-            <!-- TODO:
-                sexy icons for navigation buttons
-             -->
-            <Span text="Fa"></Span>
-        </FormattedString>
-    </Button>
-</GridLayout>
+<FlexboxLayout class="navbar" alignItems="center" justifyContent="space-between" row="1" columns="*, *, *">
+    <StackLayout margin="0" col="0" [nsRouterLink]="['/main/home']">
+        <ns-button [text]="'mamva'"></ns-button>
+    </StackLayout>
+    <StackLayout margin="0" col="1" [nsRouterLink]="['/main/new-post']">
+        <ns-button [text]="'hello'"></ns-button>
+    </StackLayout>
+    <StackLayout margin="0" col="2" [nsRouterLink]="['/main/personal']">
+        <ns-button [text]="'hello'"></ns-button>
+    </StackLayout>
+</FlexboxLayout>

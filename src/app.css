@@ -20,7 +20,6 @@ This is where the vast majority of your CSS code goes. */
 The following CSS rule changes the font size of all Buttons that have the
 "-primary" class modifier.
 */
-.fontAwesomeIcons {
-    font-family: "FontAwesome";
-    /* font-family: "FontAwesome"; */
+.fa {
+    font-family: FontAwesome, fontawesome-webfont;
 }
