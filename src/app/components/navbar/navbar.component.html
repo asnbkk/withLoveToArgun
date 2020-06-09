@@ -1,14 +1,14 @@
-<GridLayout class="navbar" row="1" columns="*,*,*" rows="*" orientation="horizontal">
+<GridLayout class="navbar" row="1" columns="auto,*,auto" rows="*" orientation="horizontal">
     <Button margin="0" col="0" [nsRouterLink]="['/main/home']">
         <FormattedString>
-            <Span text="&#xf015;\n" fontFamily="FontAwesome"></Span>
-            <Span text="Home"></Span>
+            <!-- <Span text="&#xf015;\n" fontFamily="FontAwesome"></Span> -->
+            <Span text="Ho"></Span>
         </FormattedString>
     </Button>
     <Button margin="0" col="1" [nsRouterLink]="['/main/new-post']">
         <FormattedString>
-            <Span text="&#xf000;\n" fontFamily="FontAwesome"></Span>
-            <Span text="All"></Span>
+            <!-- <Span text="&#xf000;\n" fontFamily="FontAwesome"></Span> -->
+            <Span text="Добавить заявку"></Span>
         </FormattedString>
     </Button>
     <Button margin="0" col="2" [nsRouterLink]="['/main/personal']">
@@ -17,7 +17,7 @@
             <!-- TODO:
                 sexy icons for navigation buttons
              -->
-            <Span text="Favorite"></Span>
+            <Span text="Fa"></Span>
         </FormattedString>
     </Button>
 </GridLayout>

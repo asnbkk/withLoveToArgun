@@ -1,3 +1,15 @@
 .navbar {
-    background: red;
+    background: #ffffff;
+    /* border-radius: 50px 50px 0 0; */
+    padding: 10rem 20rem;
+    border-width: 1px 0 0 0;
+    border-color: #b9b9b9;
+}
+Button {
+    border-color: transparent;
+    box-shadow: none;
+    background-color: #ffffff;
+}
+Span {
+    background-color: transparent;
 }

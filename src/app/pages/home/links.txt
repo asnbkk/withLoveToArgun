@@ -1,0 +1,5 @@
+https://egghead.io/lessons/angular-2-modify-status-bar-colors-on-ios-and-android-with-nativescript
+change status bar for ios & adndroid
+
+https://medium.com/@kivind/nativescript-disabling-dark-mode-382e5dfd11bd
+disable dark mode for android
