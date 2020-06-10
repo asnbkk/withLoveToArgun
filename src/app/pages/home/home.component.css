@@ -3,3 +3,9 @@
     /* background: rgb(195, 231, 255);
     background: linear-gradient(180deg, rgb(195, 231, 255) 0%, rgb(255, 210, 210) 100%); */
 }
+.header_logo {
+    font-size: 31px;
+    margin-top: 15rem;
+    font-weight: 500;
+    color: #000000;
+}

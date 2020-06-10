@@ -22,5 +22,6 @@ The following CSS rule changes the font size of all Buttons that have the
 */
 .fa {
     font-family: "FontAwesome", "fontawesome-webfont";
+    font-size: 20px;
     font-weight: 400;
 }

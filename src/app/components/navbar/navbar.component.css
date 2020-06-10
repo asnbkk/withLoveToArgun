@@ -1,7 +1,11 @@
 .navbar {
-    background: #dedede;
+    background: #ffffff;
     /* border-radius: 50px 50px 0 0; */
     padding: 0 20rem;
-    /* border-width: 1px 0 0 0;
-    border-color: #b9b9b9; */
+    border-width: 1px 0 0 0;
+    border-color: #b9b9b9;
+}
+.main {
+    font-size: 40px;
+    color: #00B396;
 }
