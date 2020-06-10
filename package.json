@@ -27,6 +27,7 @@
     "@angular/router": "~9.1.0",
     "@nativescript/angular": "~9.0.0",
     "@nativescript/theme": "^2.3.3",
+    "nativescript-fontawesome": "^1.0.0",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.5.0",
     "tns-core-modules": "~6.5.0",

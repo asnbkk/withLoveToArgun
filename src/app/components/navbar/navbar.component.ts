@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'ns-navbar',
   templateUrl: './navbar.component.html',

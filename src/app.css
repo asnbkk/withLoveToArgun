@@ -21,5 +21,6 @@ The following CSS rule changes the font size of all Buttons that have the
 "-primary" class modifier.
 */
 .fa {
-    font-family: FontAwesome, fontawesome-webfont;
+    font-family: "FontAwesome", "fontawesome-webfont";
+    font-weight: 400;
 }
