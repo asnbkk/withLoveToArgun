@@ -3,3 +3,6 @@ change status bar for ios & adndroid
 
 https://medium.com/@kivind/nativescript-disabling-dark-mode-382e5dfd11bd
 disable dark mode for android
+
+https://www.thepolyglotdeveloper.com/2017/08/request-android-permissions-nativescript-angular/
+permission for android camera
