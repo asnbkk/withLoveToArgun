@@ -4,7 +4,7 @@ import { takePicture } from 'nativescript-camera'
 import { ImageSource, fromFile, fromResource, fromBase64 } from "tns-core-modules/image-source";
 import { Folder, path, knownFolders } from "tns-core-modules/file-system";
 import { ImageAsset } from "tns-core-modules/image-asset";
-let fs = require("file-system")
+// let fs = require("file-system")
 import * as Permissions from "nativescript-permissions";
 declare let android: any;
 
@@ -57,13 +57,12 @@ export class NewPostComponent implements OnInit {
     takePicture({width: 300, height: 300, keepAspectRatio: true}).then((function (img) {
       // const source = new ImageSource()
       ImageSource.fromAsset(img).then((ImageSource) => {
-        const folder = fs.knownFolders.documents()
-        console.log(fs.knownFolders.documents().path)
-        const path = fs.path.join(folder.path,"image" + mill + ".png")
-        const saved = ImageSource.saveToFile(path, "png")
+        const folder = knownFolders.documents().path
+        const filePath = path.join(folder, "imagehelloworld" + mill + ".png")
+        const saved = ImageSource.saveToFile(filePath, "png")
         // this.saveImaged = path
         if (saved) {
-                console.log("Image saved successfully!", path)
+                console.log("Image saved successfully!", path , 'this is a path', img)
               }
             })
             .catch((e) => {
