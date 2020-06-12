@@ -54,21 +54,25 @@ export class NewPostComponent implements OnInit {
     //   });
     let mill = (new Date).getTime()
     let that = this
-    takePicture({width: 300, height: 300, keepAspectRatio: true}).then((function (img) {
+    takePicture({ width: 300, height: 300, keepAspectRatio: true }).then((function (img) {
       // const source = new ImageSource()
       ImageSource.fromAsset(img).then((ImageSource) => {
         const folder = knownFolders.documents().path
         const filePath = path.join(folder, "imagehelloworld" + mill + ".png")
         const saved = ImageSource.saveToFile(filePath, "png")
-        // this.saveImaged = path
+
+        // const folder: Folder = <Folder>knownFolders.currentApp();
+        // const folderPath: string = path.join(folder, "imagehelloworld" + mill + ".png");
+        const imageFromLocalFile: ImageSource = <ImageSource> fromFile(filePath);
+        console.log(imageFromLocalFile.android, "local file image")
         if (saved) {
-                console.log("Image saved successfully!", path , 'this is a path', img)
-              }
-            })
-            .catch((e) => {
-              console.log("Error: ");
-              console.log(e)
-            });
-     }))
+          console.log("Image saved successfully!")
+        }
+      })
+        .catch((e) => {
+          console.log("Error: ");
+          console.log(e)
+        });
+    }))
   }
 }
