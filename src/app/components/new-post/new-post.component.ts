@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Page } from "tns-core-modules/ui/page"
 import { takePicture } from 'nativescript-camera'
 import { ImageSource, fromFile, fromResource, fromBase64 } from "tns-core-modules/image-source";
 import { Folder, path, knownFolders } from "tns-core-modules/file-system";
+let imagePicker = require("nativescript-imagepicker")
 import { ImageAsset } from "tns-core-modules/image-asset";
 // let fs = require("file-system")
 import * as Permissions from "nativescript-permissions";
@@ -15,6 +15,7 @@ declare let android: any;
 })
 export class NewPostComponent implements OnInit {
   public saveImaged
+  public myImage
   constructor() { }
 
   ngOnInit(): void {
@@ -66,7 +67,8 @@ export class NewPostComponent implements OnInit {
         const imageFromLocalFile: ImageSource = <ImageSource> fromFile(filePath);
         console.log(imageFromLocalFile.android, "local file image")
         if (saved) {
-          console.log("Image saved successfully!")
+          console.log("Image saved successfully!", imageFromLocalFile.android)
+          that.myImage = filePath
         }
       })
         .catch((e) => {
