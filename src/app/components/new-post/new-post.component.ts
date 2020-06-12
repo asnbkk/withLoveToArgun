@@ -15,7 +15,7 @@ declare let android: any;
 })
 export class NewPostComponent implements OnInit {
   public saveImaged
-  public myImage
+  public myImage = []
   constructor() { }
 
   ngOnInit(): void {
@@ -68,7 +68,7 @@ export class NewPostComponent implements OnInit {
         console.log(imageFromLocalFile.android, "local file image")
         if (saved) {
           console.log("Image saved successfully!", imageFromLocalFile.android)
-          that.myImage = filePath
+          that.myImage.push(filePath)
         }
       })
         .catch((e) => {

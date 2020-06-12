@@ -1,4 +1,8 @@
-<StockLayout>
-    <Image *ngIf="myImage" class="imageCss" src="{{myImage}}"></Image>
+<GridLayout rows="*, *">
+<StackLayout row="0" class="add_image" orientation="horizontal">
+    <GridLayout alignItems="center" padding="0" columns="*, *" *ngFor="let i of myImage" class="image-list">
+        <Image margin="0"  class="image-list_item" src="{{i}}"></Image>
+    </GridLayout>
     <Label (tap)="openCam()" text="take a picture"></Label>
-</StockLayout>
+</StackLayout>
+</GridLayout>

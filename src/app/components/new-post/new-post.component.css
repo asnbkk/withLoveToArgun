@@ -1,3 +1,6 @@
-.imageCss {
+.add_image {
+    background-color: red;
+}
+.image-list_item {
     height: 300rem;
 }
