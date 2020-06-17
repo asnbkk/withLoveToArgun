@@ -1,6 +1,14 @@
-.add_image {
+.image-list_item {
     background-color: red;
 }
-.image-list_item {
-    height: 300rem;
+.counter {
+    color: #ffffff;
+    font-size: 30;
+    background-color: black;
+}
+.button {
+    background-color: rgb(180, 255, 180);
+    font-weight: bold;
+    font-size: 30;
+    
 }

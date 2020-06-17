@@ -16,6 +16,7 @@ declare let android: any;
 export class NewPostComponent implements OnInit {
   public saveImaged
   public myImage = []
+  public backgrounds = ["yellow", "green", "blue"]
   constructor() { }
 
   ngOnInit(): void {

@@ -1,8 +1,14 @@
-<GridLayout rows="*, *">
-<StackLayout row="0" class="add_image" orientation="horizontal">
-    <GridLayout alignItems="center" padding="0" columns="*, *" *ngFor="let i of myImage" class="image-list">
-        <Image margin="0"  class="image-list_item" src="{{i}}"></Image>
-    </GridLayout>
-    <Label (tap)="openCam()" text="take a picture"></Label>
-</StackLayout>
+<GridLayout rows="auto, *">
+    <StackLayout class="add_image" row="0" backgroundColor="red">
+        <!-- <GridLayout class="image-list"> -->
+            <StackLayout *ngFor="let i of myImage">
+                <Label class="counter" text="{{1 + myImage.indexOf(i)}}"></Label>
+                <Image margin="0" class="image-list_item" src="{{i}}"></Image>
+            </StackLayout>
+            <!-- </GridLayout> -->
+        </StackLayout>
+        <StackLayout row="1">
+        
+            <Label (tap)="openCam()" class="button" text="Click to take a picture"></Label>
+    </StackLayout>
 </GridLayout>
