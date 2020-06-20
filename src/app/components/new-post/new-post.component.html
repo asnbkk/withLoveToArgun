@@ -9,10 +9,23 @@
         </StackLayout>
         <StackLayout row="1">
         
-            <Label (tap)="openCam()" class="button" text="Click to take a picture"></Label>
+            <Label (tap)="openCam()" class="button" text="Click to take a picturee"></Label>
     </StackLayout>
 </GridLayout>
-
-<!-- <GridLayout>
-    <MapView (mapReady)="onMapReady($event)" iosOverflowSafeArea="true"></MapView>
-</GridLayout> -->
+<GridLayout class="map">
+    <ContentView height="100%" width="100%">
+        <Mapbox
+            accessToken="pk.eyJ1IjoiYmVra2FsaXlldmFzc2FuIiwiYSI6ImNrYm5qOHQ2ejBtZmUyeG1pajV2cTZsdmEifQ.IncTZg_P-uqJHsxPWMDGDg"
+            mapStyle="traffic_day"
+            latitude="50.467735"
+            longitude="13.427718"
+            hideCompass="true"
+            zoomLevel="18"
+            showUserLocation="true"
+            (mapReady)="onMapReady($event)">
+        </Mapbox>
+      </ContentView>
+</GridLayout>
+    <!-- <GridLayout>
+        <MapView (mapReady)="onMapReady($event)" iosOverflowSafeArea="true"></MapView>
+    </GridLayout> -->
